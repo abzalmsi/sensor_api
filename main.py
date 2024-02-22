@@ -6,6 +6,7 @@ from fastapi import FastAPI
 from get_html_data import get_data
 
 
+
 app = FastAPI()
 
 #ip = '10.222.53.38'
