@@ -18,12 +18,10 @@ def get_data(ip, key):
         if len(conv_data) > 1:
             data_int = (f'{conv_data[0]}.{conv_data[1]}')
             print(data_int)
-            bot.send_message(chat_id, f"IP: {ip} {data_int}")
 
         else:
             data_int = (conv_data[0])
             print(data_int)
-            bot.send_message(chat_id, f"IP: http://{ip}/{key} \nValue: {data_int}")
         return float(data_int)
     except Exception as ex:
         print(f'ОШИБКА: {ex}')
